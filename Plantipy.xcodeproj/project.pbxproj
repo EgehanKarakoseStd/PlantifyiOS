@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0219A572A16D3C8D29D38332 /* Pods_Plantipy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD87895A577C059C96D32FE /* Pods_Plantipy.framework */; };
+		D84335AC246811A100460F1A /* MyImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D84335AB246811A100460F1A /* MyImageClassifier.mlmodel */; };
+		D84FFB44245C2D6F00E599A2 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84FFB43245C2D6F00E599A2 /* Plant.swift */; };
+		D84FFB46245C2E4300E599A2 /* PlantAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84FFB45245C2E4300E599A2 /* PlantAPI.swift */; };
+		D84FFB4C245C2FAE00E599A2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84FFB4B245C2FAE00E599A2 /* Constants.swift */; };
+		D89D6D5023B8C03A00879BD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89D6D4F23B8C03A00879BD6 /* AppDelegate.swift */; };
+		D89D6D5223B8C03A00879BD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89D6D5123B8C03A00879BD6 /* SceneDelegate.swift */; };
+		D89D6D5423B8C03A00879BD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89D6D5323B8C03A00879BD6 /* ViewController.swift */; };
+		D89D6D5723B8C03A00879BD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89D6D5523B8C03A00879BD6 /* Main.storyboard */; };
+		D89D6D5923B8C03F00879BD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D89D6D5823B8C03F00879BD6 /* Assets.xcassets */; };
+		D89D6D5C23B8C03F00879BD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89D6D5A23B8C03F00879BD6 /* LaunchScreen.storyboard */; };
+		D8EFBC21245C4F2900F6E0C9 /* PlantInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EFBC20245C4F2900F6E0C9 /* PlantInfoVC.swift */; };
+		D8EFBC23245C5E0200F6E0C9 /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EFBC22245C5E0100F6E0C9 /* Dataset.swift */; };
+		D8EFBC25245C5E4100F6E0C9 /* PlantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EFBC24245C5E4100F6E0C9 /* PlantData.swift */; };
+		D8EFBC27245C633B00F6E0C9 /* Specifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EFBC26245C633B00F6E0C9 /* Specifications.swift */; };
+		D8EFBC29245C635200F6E0C9 /* Growth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EFBC28245C635200F6E0C9 /* Growth.swift */; };
+		D8FD3A38246D55B800C88149 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD3A36246D55B800C88149 /* GradientView.swift */; };
+		D8FD3A39246D55B800C88149 /* RoundedBG.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD3A37246D55B800C88149 /* RoundedBG.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		228096E01C7004AC3A8E6EB6 /* Pods-Plantipy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plantipy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Plantipy/Pods-Plantipy.debug.xcconfig"; sourceTree = "<group>"; };
+		4FFAF2DACB5688F3A0C49D27 /* Pods-Plantipy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plantipy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Plantipy/Pods-Plantipy.release.xcconfig"; sourceTree = "<group>"; };
+		8DD87895A577C059C96D32FE /* Pods_Plantipy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plantipy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D84335AB246811A100460F1A /* MyImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MyImageClassifier.mlmodel; path = ../../../../../../Desktop/MyImageClassifier.mlmodel; sourceTree = "<group>"; };
+		D84FFB43245C2D6F00E599A2 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		D84FFB45245C2E4300E599A2 /* PlantAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantAPI.swift; sourceTree = "<group>"; };
+		D84FFB4B245C2FAE00E599A2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D89D6D4C23B8C03A00879BD6 /* Plantipy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plantipy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89D6D4F23B8C03A00879BD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D89D6D5123B8C03A00879BD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D89D6D5323B8C03A00879BD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D89D6D5623B8C03A00879BD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D89D6D5823B8C03F00879BD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D89D6D5B23B8C03F00879BD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D89D6D5D23B8C03F00879BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8EFBC20245C4F2900F6E0C9 /* PlantInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantInfoVC.swift; sourceTree = "<group>"; };
+		D8EFBC22245C5E0100F6E0C9 /* Dataset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
+		D8EFBC24245C5E4100F6E0C9 /* PlantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantData.swift; sourceTree = "<group>"; };
+		D8EFBC26245C633B00F6E0C9 /* Specifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specifications.swift; sourceTree = "<group>"; };
+		D8EFBC28245C635200F6E0C9 /* Growth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Growth.swift; sourceTree = "<group>"; };
+		D8FD3A36246D55B800C88149 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		D8FD3A37246D55B800C88149 /* RoundedBG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBG.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D89D6D4923B8C03A00879BD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0219A572A16D3C8D29D38332 /* Pods_Plantipy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC8CB2ED8A9712351E46323B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DD87895A577C059C96D32FE /* Pods_Plantipy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D84FFB40245C2D1D00E599A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D84FFB43245C2D6F00E599A2 /* Plant.swift */,
+				D8EFBC22245C5E0100F6E0C9 /* Dataset.swift */,
+				D8EFBC24245C5E4100F6E0C9 /* PlantData.swift */,
+				D8EFBC26245C633B00F6E0C9 /* Specifications.swift */,
+				D8EFBC28245C635200F6E0C9 /* Growth.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D84FFB41245C2D2900E599A2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D84FFB45245C2E4300E599A2 /* PlantAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D84FFB42245C2D4700E599A2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D84FFB4B245C2FAE00E599A2 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D89D6D4323B8C03A00879BD6 = {
+			isa = PBXGroup;
+			children = (
+				D89D6D4E23B8C03A00879BD6 /* Plantipy */,
+				D89D6D4D23B8C03A00879BD6 /* Products */,
+				ECF5FF35CDDBBB7C1BABD3C2 /* Pods */,
+				BC8CB2ED8A9712351E46323B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D89D6D4D23B8C03A00879BD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D89D6D4C23B8C03A00879BD6 /* Plantipy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D89D6D4E23B8C03A00879BD6 /* Plantipy */ = {
+			isa = PBXGroup;
+			children = (
+				D8FD3A35246D553D00C88149 /* View */,
+				D84FFB42245C2D4700E599A2 /* Utils */,
+				D84FFB41245C2D2900E599A2 /* Services */,
+				D84FFB40245C2D1D00E599A2 /* Model */,
+				D89D6D4F23B8C03A00879BD6 /* AppDelegate.swift */,
+				D84335AB246811A100460F1A /* MyImageClassifier.mlmodel */,
+				D89D6D5123B8C03A00879BD6 /* SceneDelegate.swift */,
+				D89D6D5323B8C03A00879BD6 /* ViewController.swift */,
+				D89D6D5523B8C03A00879BD6 /* Main.storyboard */,
+				D89D6D5823B8C03F00879BD6 /* Assets.xcassets */,
+				D89D6D5A23B8C03F00879BD6 /* LaunchScreen.storyboard */,
+				D89D6D5D23B8C03F00879BD6 /* Info.plist */,
+				D8EFBC20245C4F2900F6E0C9 /* PlantInfoVC.swift */,
+			);
+			path = Plantipy;
+			sourceTree = "<group>";
+		};
+		D8FD3A35246D553D00C88149 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8FD3A36246D55B800C88149 /* GradientView.swift */,
+				D8FD3A37246D55B800C88149 /* RoundedBG.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECF5FF35CDDBBB7C1BABD3C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				228096E01C7004AC3A8E6EB6 /* Pods-Plantipy.debug.xcconfig */,
+				4FFAF2DACB5688F3A0C49D27 /* Pods-Plantipy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D89D6D4B23B8C03A00879BD6 /* Plantipy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D89D6D6023B8C03F00879BD6 /* Build configuration list for PBXNativeTarget "Plantipy" */;
+			buildPhases = (
+				97234E78FD192EB777287529 /* [CP] Check Pods Manifest.lock */,
+				D89D6D4823B8C03A00879BD6 /* Sources */,
+				D89D6D4923B8C03A00879BD6 /* Frameworks */,
+				D89D6D4A23B8C03A00879BD6 /* Resources */,
+				58333038DA325AB0566143F0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Plantipy;
+			productName = Plantipy;
+			productReference = D89D6D4C23B8C03A00879BD6 /* Plantipy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D89D6D4423B8C03A00879BD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Egehan Karaköse";
+				TargetAttributes = {
+					D89D6D4B23B8C03A00879BD6 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = D89D6D4723B8C03A00879BD6 /* Build configuration list for PBXProject "Plantipy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D89D6D4323B8C03A00879BD6;
+			productRefGroup = D89D6D4D23B8C03A00879BD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D89D6D4B23B8C03A00879BD6 /* Plantipy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D89D6D4A23B8C03A00879BD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89D6D5C23B8C03F00879BD6 /* LaunchScreen.storyboard in Resources */,
+				D89D6D5923B8C03F00879BD6 /* Assets.xcassets in Resources */,
+				D89D6D5723B8C03A00879BD6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58333038DA325AB0566143F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Plantipy/Pods-Plantipy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Plantipy/Pods-Plantipy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97234E78FD192EB777287529 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Plantipy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D89D6D4823B8C03A00879BD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89D6D5423B8C03A00879BD6 /* ViewController.swift in Sources */,
+				D89D6D5023B8C03A00879BD6 /* AppDelegate.swift in Sources */,
+				D84FFB44245C2D6F00E599A2 /* Plant.swift in Sources */,
+				D8EFBC27245C633B00F6E0C9 /* Specifications.swift in Sources */,
+				D89D6D5223B8C03A00879BD6 /* SceneDelegate.swift in Sources */,
+				D84FFB4C245C2FAE00E599A2 /* Constants.swift in Sources */,
+				D8EFBC23245C5E0200F6E0C9 /* Dataset.swift in Sources */,
+				D84335AC246811A100460F1A /* MyImageClassifier.mlmodel in Sources */,
+				D8FD3A39246D55B800C88149 /* RoundedBG.swift in Sources */,
+				D8EFBC21245C4F2900F6E0C9 /* PlantInfoVC.swift in Sources */,
+				D8EFBC25245C5E4100F6E0C9 /* PlantData.swift in Sources */,
+				D8FD3A38246D55B800C88149 /* GradientView.swift in Sources */,
+				D8EFBC29245C635200F6E0C9 /* Growth.swift in Sources */,
+				D84FFB46245C2E4300E599A2 /* PlantAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D89D6D5523B8C03A00879BD6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D89D6D5623B8C03A00879BD6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D89D6D5A23B8C03F00879BD6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D89D6D5B23B8C03F00879BD6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D89D6D5E23B8C03F00879BD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D89D6D5F23B8C03F00879BD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D89D6D6123B8C03F00879BD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 228096E01C7004AC3A8E6EB6 /* Pods-Plantipy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6J6245LPWX;
+				INFOPLIST_FILE = Plantipy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "egehan-karakose.Plantipy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D89D6D6223B8C03F00879BD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FFAF2DACB5688F3A0C49D27 /* Pods-Plantipy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6J6245LPWX;
+				INFOPLIST_FILE = Plantipy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "egehan-karakose.Plantipy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D89D6D4723B8C03A00879BD6 /* Build configuration list for PBXProject "Plantipy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D89D6D5E23B8C03F00879BD6 /* Debug */,
+				D89D6D5F23B8C03F00879BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D89D6D6023B8C03F00879BD6 /* Build configuration list for PBXNativeTarget "Plantipy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D89D6D6123B8C03F00879BD6 /* Debug */,
+				D89D6D6223B8C03F00879BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D89D6D4423B8C03A00879BD6 /* Project object */;
+}
