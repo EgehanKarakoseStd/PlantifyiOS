@@ -117,7 +117,7 @@ let species = [
     PlantSpecies(title: "grape", id: 192424),
     PlantSpecies(title: "Cucumis sativus", id: 125316),
     PlantSpecies(title: "Olea europaea", id: 160060),
-    PlantSpecies(title: "zantedeschia", id: 223145),
+    PlantSpecies(title: "zantedeschia", id: 193453),
     PlantSpecies(title: "rosa", id: 175681),
     PlantSpecies(title: "cydonia oblonga", id: 125861),
     PlantSpecies(title: "Mentha", id: 155717),
