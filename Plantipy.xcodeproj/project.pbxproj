@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0219A572A16D3C8D29D38332 /* Pods_Plantipy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD87895A577C059C96D32FE /* Pods_Plantipy.framework */; };
-		D84335AC246811A100460F1A /* MyImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D84335AB246811A100460F1A /* MyImageClassifier.mlmodel */; };
 		D84FFB44245C2D6F00E599A2 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84FFB43245C2D6F00E599A2 /* Plant.swift */; };
 		D84FFB46245C2E4300E599A2 /* PlantAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84FFB45245C2E4300E599A2 /* PlantAPI.swift */; };
 		D84FFB4C245C2FAE00E599A2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84FFB4B245C2FAE00E599A2 /* Constants.swift */; };
@@ -18,6 +17,7 @@
 		D89D6D5723B8C03A00879BD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89D6D5523B8C03A00879BD6 /* Main.storyboard */; };
 		D89D6D5923B8C03F00879BD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D89D6D5823B8C03F00879BD6 /* Assets.xcassets */; };
 		D89D6D5C23B8C03F00879BD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89D6D5A23B8C03F00879BD6 /* LaunchScreen.storyboard */; };
+		D8AF37DB24841796007D481E /* MyImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D8AF37DA24841796007D481E /* MyImageClassifier.mlmodel */; };
 		D8EFBC21245C4F2900F6E0C9 /* PlantInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EFBC20245C4F2900F6E0C9 /* PlantInfoVC.swift */; };
 		D8EFBC23245C5E0200F6E0C9 /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EFBC22245C5E0100F6E0C9 /* Dataset.swift */; };
 		D8EFBC25245C5E4100F6E0C9 /* PlantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EFBC24245C5E4100F6E0C9 /* PlantData.swift */; };
@@ -31,7 +31,6 @@
 		228096E01C7004AC3A8E6EB6 /* Pods-Plantipy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plantipy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Plantipy/Pods-Plantipy.debug.xcconfig"; sourceTree = "<group>"; };
 		4FFAF2DACB5688F3A0C49D27 /* Pods-Plantipy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plantipy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Plantipy/Pods-Plantipy.release.xcconfig"; sourceTree = "<group>"; };
 		8DD87895A577C059C96D32FE /* Pods_Plantipy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plantipy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D84335AB246811A100460F1A /* MyImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MyImageClassifier.mlmodel; path = ../../../../../../Desktop/MyImageClassifier.mlmodel; sourceTree = "<group>"; };
 		D84FFB43245C2D6F00E599A2 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		D84FFB45245C2E4300E599A2 /* PlantAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantAPI.swift; sourceTree = "<group>"; };
 		D84FFB4B245C2FAE00E599A2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -43,6 +42,7 @@
 		D89D6D5823B8C03F00879BD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D89D6D5B23B8C03F00879BD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D89D6D5D23B8C03F00879BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8AF37DA24841796007D481E /* MyImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyImageClassifier.mlmodel; sourceTree = "<group>"; };
 		D8EFBC20245C4F2900F6E0C9 /* PlantInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantInfoVC.swift; sourceTree = "<group>"; };
 		D8EFBC22245C5E0100F6E0C9 /* Dataset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
 		D8EFBC24245C5E4100F6E0C9 /* PlantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantData.swift; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 				D84FFB41245C2D2900E599A2 /* Services */,
 				D84FFB40245C2D1D00E599A2 /* Model */,
 				D89D6D4F23B8C03A00879BD6 /* AppDelegate.swift */,
-				D84335AB246811A100460F1A /* MyImageClassifier.mlmodel */,
+				D8AF37DA24841796007D481E /* MyImageClassifier.mlmodel */,
 				D89D6D5123B8C03A00879BD6 /* SceneDelegate.swift */,
 				D89D6D5323B8C03A00879BD6 /* ViewController.swift */,
 				D89D6D5523B8C03A00879BD6 /* Main.storyboard */,
@@ -277,9 +277,9 @@
 				D89D6D5223B8C03A00879BD6 /* SceneDelegate.swift in Sources */,
 				D84FFB4C245C2FAE00E599A2 /* Constants.swift in Sources */,
 				D8EFBC23245C5E0200F6E0C9 /* Dataset.swift in Sources */,
-				D84335AC246811A100460F1A /* MyImageClassifier.mlmodel in Sources */,
 				D8FD3A39246D55B800C88149 /* RoundedBG.swift in Sources */,
 				D8EFBC21245C4F2900F6E0C9 /* PlantInfoVC.swift in Sources */,
+				D8AF37DB24841796007D481E /* MyImageClassifier.mlmodel in Sources */,
 				D8EFBC25245C5E4100F6E0C9 /* PlantData.swift in Sources */,
 				D8FD3A38246D55B800C88149 /* GradientView.swift in Sources */,
 				D8EFBC29245C635200F6E0C9 /* Growth.swift in Sources */,

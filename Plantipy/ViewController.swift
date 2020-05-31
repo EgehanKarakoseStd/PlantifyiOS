@@ -105,6 +105,7 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate, UINavi
         
         InfoButtonView.isHidden = true
         
+        
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
             presentPhotoPicker(sourceType: .photoLibrary)
             return

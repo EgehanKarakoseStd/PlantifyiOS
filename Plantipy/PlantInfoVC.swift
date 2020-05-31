@@ -26,9 +26,6 @@ class PlantInfoVC: UIViewController {
     var shade = ""
     var id = ""
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
         
          if (name.caseInsensitiveCompare("") == .orderedSame){name = "Unknown"}
          if (sal.caseInsensitiveCompare("") == .orderedSame){sal = "Unknown"}
@@ -47,6 +44,7 @@ class PlantInfoVC: UIViewController {
 
         
     }
+    
     
 
    
