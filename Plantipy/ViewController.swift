@@ -9,6 +9,7 @@
 import UIKit
 import CoreML
 import Vision
+import Network
 
 class ViewController: UIViewController , UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
@@ -29,10 +30,29 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate, UINavi
     var classificationResult = ""
     var classificationResult2 = ""
     
+    let monitor = NWPathMonitor()
+    let queue = DispatchQueue(label: "InternetConnectionMonitor")
+    
+    var connectivity = false
+    
     
     
     override func viewDidLoad() {
         InfoButtonView.isHidden = true
+        
+         monitor.pathUpdateHandler = { pathUpdateHandler in
+                         if pathUpdateHandler.status == .satisfied {
+                             print("Internet connection is on.")
+                             self.connectivity = true
+                         } else {
+                             self.classificationLable.text = "There's No Internet Connection.\n Please Connect to The Internet and Restart App"
+                             self.connectivity = false
+                         }
+                     }
+
+                     monitor.start(queue: queue)
+        
+       
     }
     
     
@@ -106,6 +126,7 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate, UINavi
         InfoButtonView.isHidden = true
         
         
+        
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
             presentPhotoPicker(sourceType: .photoLibrary)
             return
@@ -142,6 +163,9 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate, UINavi
         imageViewer.image = image
         updateClassifications(for: image)
     }
+    
+    
+  
     
     
     func getPlantInfo(name: String){
@@ -187,7 +211,11 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate, UINavi
             }
         print(name)
         print(id2)
-        InfoButtonView.isHidden = false
+        
+        if (connectivity == true){
+             InfoButtonView.isHidden = false
+        }
+       
             
             
             
