@@ -13,13 +13,9 @@ import Foundation
 struct Plant: Codable{
     
     let common_name: String?
-    let complete_data: Bool?
     let family_common_name : String?
     let specifications: Specifications
     let growth: Growth
     
 
-    
-    
-    
 }

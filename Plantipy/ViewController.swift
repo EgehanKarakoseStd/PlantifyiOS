@@ -19,13 +19,13 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate, UINavi
     @IBOutlet weak var imageViewer: UIImageView!
     
     var plantApi  = PlantAPI()
-    var plant : Plant!
-    var plant2 : Plant!
+    var d : Data!
+    var d2 : Data!
     
     var id = 0
     var id2 = 0
     
-    var data = DataSet()
+    var datas = DataSet()
                                                                               
     var classificationResult = ""
     var classificationResult2 = ""
@@ -171,7 +171,7 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate, UINavi
     func getPlantInfo(name: String){
         
         
-        for i in data.species{
+        for i in datas.species{
             if(i.title.caseInsensitiveCompare(name) == .orderedSame){
                 id = i.id
             }
@@ -180,9 +180,9 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate, UINavi
         print(name)
         print(id)
         
-        plantApi.getPlantInfo(id: id) { (plant) in
-            if let plant = plant {
-                self.plant = plant
+        plantApi.getPlantInfo(id: id) { (data) in
+            if let data = data {
+                self.d = data
                 
             }
         }
@@ -196,16 +196,16 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate, UINavi
     func getPlantInfo2(name: String){
             
         
-        for i in data.species{
+        for i in datas.species{
                    if(i.title.caseInsensitiveCompare(name) == .orderedSame){
                        id2 = i.id
                    }
 
                }
             
-            plantApi.getPlantInfo(id: id2) { (plant) in
-                if let plant = plant {
-                    self.plant2 = plant
+            plantApi.getPlantInfo(id: id2) { (data) in
+                if let data = data {
+                    self.d2 = data
                     
                 }
             }
@@ -229,24 +229,25 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate, UINavi
         if (segue.identifier == "toInfo"){
             guard let plantInfoVC = segue.destination as? PlantInfoVC else{return}
             
-            plantInfoVC.name = plant.common_name ?? "Unknown"
-            plantInfoVC.sal = plant.growth.salinity_tolerance ?? "Unknown" 
-            plantInfoVC.tox = plant.specifications.toxicity ?? "Unknown"
-            plantInfoVC.famName = plant.family_common_name ?? "Unknown"
-            plantInfoVC.fire = plant.growth.fire_tolerance ?? "Unknown"
-            plantInfoVC.shade = plant.growth.shade_tolerance ?? "Unknown"
+    
+            plantInfoVC.name = d.data.common_name ?? "Unknown"
+            plantInfoVC.sal = d.data.growth.soil_salinity ?? "Unknown"
+            plantInfoVC.tox = d.data.specifications.toxicity ?? "Unknown"
+            plantInfoVC.famName = d.data.family_common_name ?? "Unknown"
+            plantInfoVC.fire = d.data.growth.soil_humidity ?? "Unknown"
+            plantInfoVC.shade = d.data.growth.soil_nutriments ?? "Unknown"
             plantInfoVC.id = String(id)
             
     }
         else if (segue.identifier == "toInfo2"){
             guard let plantInfoVC = segue.destination as? PlantInfoVC else{return}
             
-                plantInfoVC.name = plant2.common_name ?? "Unknown"
-                plantInfoVC.sal = plant2.growth.salinity_tolerance ?? "Unknown"
-                plantInfoVC.tox = plant2.specifications.toxicity ?? "Unknown"
-                plantInfoVC.famName = plant2.family_common_name ?? "Unknown"
-                plantInfoVC.fire = plant2.growth.fire_tolerance ?? "Unknown"
-                plantInfoVC.shade = plant2.growth.shade_tolerance ?? "Unknown"
+                plantInfoVC.name = d2.data.common_name ?? "Unknown"
+                plantInfoVC.sal = d2.data.growth.soil_salinity ?? "Unknown"
+                plantInfoVC.tox = d2.data.specifications.toxicity ?? "Unknown"
+                plantInfoVC.famName = d2.data.family_common_name ?? "Unknown"
+                plantInfoVC.fire = d2.data.growth.soil_humidity ?? "Unknown"
+                plantInfoVC.shade = d2.data.growth.soil_nutriments ?? "Unknown"
                 plantInfoVC.id = String(id2)
                 
         }

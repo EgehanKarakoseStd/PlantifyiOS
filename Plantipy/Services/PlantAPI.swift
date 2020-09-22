@@ -26,13 +26,14 @@ class PlantAPI{
                 
             }
             
-            guard let data = response.data  else { return completion(nil) }
+            guard let datas = response.data  else { return completion(nil) }
+            print(datas)
             
             let jsonDecoder = JSONDecoder()
             
             do {
-                let plant = try jsonDecoder.decode(Plant.self, from: data)
-                completion(plant)
+                let data = try jsonDecoder.decode(Data.self, from: datas)
+                completion(data)
             }catch{
                 debugPrint(error.localizedDescription)
                 completion(nil)

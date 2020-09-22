@@ -10,8 +10,8 @@ import Foundation
 
 
 struct Growth: Codable {
-    let salinity_tolerance:String?
-    let shade_tolerance:String?
-    let fire_tolerance:String?
+    let soil_salinity:String?
+    let soil_humidity:String?
+    let soil_nutriments:String?
     
 }
